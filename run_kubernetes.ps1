@@ -1,5 +1,5 @@
 #https://github.com/GoogleCloudPlatform/kubernetes-workshops/tree/master/quickstart
-#kubectl start
+#minikube start
 
 kubectl run mymicrosrv --image=iulianmail007/myrepo_u_do:altest --port=5000 --replicas=2 
 

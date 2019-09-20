@@ -1,0 +1,18 @@
+#https://docs.aws.amazon.com/AmazonECS/latest/userguide/create_cluster.html
+#image made available in aws ECS  482389634785.dkr.ecr.us-west-2.amazonaws.com/udacityprj4:latest
+#create cluster: udacityprj41
+#add cluster to kubectl config:
+#aws eks --region us-west-2 update-kubeconfig --name udacityprj41
+#creste "workers"in Amazon EKS-optimized AMI as stack
+
+
+kubectl apply -f aws-auth-cm.yml
+
+kubectl create -f deplyoment.yml
+
+kubectl create -f LB.yml
+
+
+
+#kubectl delete deployment,service -l app=udacityprj41
+#delete the cluster

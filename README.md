@@ -3,12 +3,12 @@
 
 ## Project Overview
 
-In this project a Machine Learning Microservice API will be containerizad. 
+In this project, a Machine Learning Microservice API will be containerized. 
 
 ## Setup the Environment
 
-* With a Makafile hepl is possible to:
-* Run `make setup` to set an python environment
+* With a Makefile help is possible to:
+* Run `make setup` to set a python environment
 * Run `make install` to install the necessary dependencies (requirements.txt)
 * Run `make lint` to verify the coder (hadolint and lint)
 
@@ -22,7 +22,7 @@ In this project a Machine Learning Microservice API will be containerizad.
 
 
 ### Test the Results
-Run `./make_prediction.sh`
+Run `./make_prediction.sh` for the proper Port and IP
 
 
 ### CircleCI Integration
