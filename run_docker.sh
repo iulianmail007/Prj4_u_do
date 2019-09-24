@@ -15,5 +15,5 @@ docker image ls
 
 # Step 3: 
 # Run flask app
-docker run  -p 5001:5000 udacityprj4
+docker run -d -p 5001:5000 udacityprj4
 
