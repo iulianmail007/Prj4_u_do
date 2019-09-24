@@ -8,11 +8,13 @@
 dockerpath=iulianmail007/myrepo_u_do
 
 
-# Step 2:  
+# Step 2:
 # Authenticate & tag
-docker tag udacityprj4:latest iulianmail007/myrepo_u_do:altest
+docker login --password-stdin --username=iulianmail007 https://index.docker.io/v1
+
+docker tag udacityprj4:latest $dockerpath:latest
 echo "Docker ID and Image: $dockerpath"
 
 # Step 3:
 # Push image to a docker repository
-docker push iulianmail007/myrepo_u_do:altest
+docker push $dockerpath:latest
